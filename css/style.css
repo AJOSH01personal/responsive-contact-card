@@ -1,0 +1,230 @@
+@import url(reset.css);
+/* Mobile (base) */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 100%;
+  max-width: 340px;
+  background: #fff;
+  border-radius: 12px;
+  border: 5px solid #0077cc; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+article {
+  padding: 20px;
+}
+
+figure {
+  margin: 0;
+  display:flex;
+  justify-content: center;
+  
+}
+
+figure img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 5px solid #0077cc;
+  
+}
+
+.contact-details .name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+.contact-details .title {
+  font-size: 1rem;
+  color: #555;
+  margin: 4px 0;
+}
+
+.contact-details .phone a {
+  font-size: 0.95rem;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.contact-details .phone a:hover {
+  text-decoration: underline;
+}
+
+.company-info {
+  background: #0077cc;
+  color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.company-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.company-info p {
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+
+/* Tablets */
+@media screen and (min-width: 600px) {
+  .card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 5px solid #0077cc;
+    border-radius: 12px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+  }
+
+  figure {
+    margin: 0 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  figure img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #0077cc;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .contact-details {
+    flex: 1;
+    text-align: center;
+  }
+
+  .company-info {
+    flex: 1;
+    background: #0077cc;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .company-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .company-info p {
+    margin: 6px 0 0;
+    font-size: 0.95rem;
+    font-style: italic;
+  }
+}
+
+/* Desktops */
+@media screen and (min-width: 1024px) {
+  .card {
+    max-width: 900px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 5px solid #0077cc;
+    border-radius: 12px;
+    background: #fff;
+    gap: 40px;
+    text-align: left;
+  }
+
+  article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    padding: 0;
+  }
+
+  figure {
+    flex: 0 0 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  figure img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #0077cc;
+    object-fit: cover;
+  }
+
+  .card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .contact-details {
+    text-align: center;
+  }
+
+  .company-info {
+    background: #0077cc;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .company-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .company-info p {
+    margin: 6px 0 0;
+    font-size: 0.95rem;
+    font-style: italic;
+  }
+}
